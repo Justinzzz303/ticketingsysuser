@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-design{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.login-left{
+    width: 15%;
+    height: 100vh;
+    background-color: black;
+}
+.login-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 100vh;
+}
+
+.music-box{
+    border-radius: 20px;
+    width: 800px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow:inset 1px 1px 6px rgba(255, 255, 255, 0.3),20px 20px 100px rgba(0, 0, 0, 0.5) ;
+}
+.music-box-up{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.music-box-down{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.music-box-up-left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music-box-up-right{
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+
+}
+.music-box-pic{
+    width: 200px;
+    height: 200px;
+    background-image: url(../pic/loginback.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    box-shadow:inset 1px 1px 6px rgba(255, 255, 255, 0.3),10px 10px 10px rgba(0, 0, 0, 0.5) ;
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.music-box-login{
+    width: 400px;
+    height: 100%;
+}
+.music-box-login h2{
+padding-top: 30px;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Pixel';
+}
+
+.user-id{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.password{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.same{
+    width: 220px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+
+.button{
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 240px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button{
+    text-decoration: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(255,255, 255, 0.1);
+    box-shadow: 0px 2px 10px #111;
+}
+
+.register p{
+    text-align: center;
+}
+
+.btop{
+    width: 100%;
+    height: 20%;
+    background-image: url(../pic/ts-logo.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.bbottom{
+    width: 100%;
+    height: 560px;
+    color:white;
+    text-align: center;
+}
+
+h1{
+    font-size: 48px;
+    color: #333;
+    animation: animate 4s linear infinite;
+}
+
+h1:nth-child(1){
+    animation-delay: 0s;
+}
+
+h1:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+h1:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+h1:nth-child(5){
+    animation-delay: 1.6s;
+}
+
+h1:nth-child(6){
+    animation-delay: 2s;
+}
+h1:nth-child(7){
+    animation-delay: 2.4s;
+}
+
+h1:nth-child(8){
+    animation-delay: 2.8s;
+}
+
+h1:nth-child(9){
+    animation-delay: 3.2s;
+}
+
+h1:nth-child(10){
+    animation-delay: 3.6s;
+}
+
+
+@keyframes animate{
+    0%,80%{
+        color:#333;
+        text-shadow: none;
+    }
+    100%{
+        color: #fff;
+        text-shadow: 0 0  10px #fff,
+                     0 0  20px #fff,
+                     0 0  40px #fff,
+                     0 0  80px #fff,
+                     0 0  120px #fff,
+                     0 0  160px #fff,
+    }
+}
+
+.music-box-down-playlist{
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.music-box-down-playlist span{
+    margin: 20px;
+}
+

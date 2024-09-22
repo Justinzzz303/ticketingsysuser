@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+/* nav css*/
+.nav{
+    max-width: 100vw;
+    height: 70px;
+    display: flex;
+}
+.nav-pic{
+    width: 100px;
+    height: 70px;
+    background-image: url(../pic/ts-logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav-option{
+    width: 800px;
+    height: 70px;
+    margin-left: 100px;
+    text-align: center;
+}
+.nav-option a{
+    text-transform: uppercase;
+    margin-left: 20px;
+    line-height: 70px;
+    text-decoration: none;
+    color: white;
+}
+.nav-option a:hover{
+    border-bottom: 1px solid white;
+}
+.dropbtn {
+    background-color:black;
+    color: white;
+    padding-left: 100px;
+    margin-left: 50px;
+    line-height: 70px;  
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    margin:0px 0px 0px 100px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+  
+    margin-left: 100px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color:black;
+    color: white;
+}
+  
+  .dropdown:hover .dropdown-content {
+    background-color:white;
+    color: black;
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    text-decoration: underline;
+  }
+
+  .show {display: block;}
+  
+  .show {
+    display: block;
+}
+.top-screen{
+    width: 100vw;
+    height: 630px;
+    display: flex;
+}
+
+/* top screen left css*/
+.top-screen-left{
+    width: 45%;
+}
+.top-screen-left h1{
+    margin-top: 70px;
+    color: white;
+    font-size: 80px;
+    margin-left: 30px;
+}
+.top-screen-left-button{
+    margin: 40px 0 0 30px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, #8e44ad, #3498db, #1abc9c, #2ecc71)1 stretch;
+    animation: bottoncolor 3s infinite linear;
+}
+.top-screen-left-button a{
+    color: white;
+}
+@keyframes bottoncolor {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/*top screen right css*/
+.top-screen-right{
+    max-width: 55%;
+}
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0; 
+    }
+    to {
+        transform: translateX(20%); 
+    }
+}
+.image-slide-in {
+animation-name: slideInFromRight;
+animation-duration: 2s; 
+animation-fill-mode: both; 
+animation-delay: 0.5s;
+}
+
+/*font type import*/
+@font-face {
+    font-family: 'Pixel'; 
+    src:url('../press_start_2p/PressStart2P.ttf') format('truetype'); 
+}
+
+/* about us section*/
+.about{
+    width: 100vw;
+    height: 350px;
+    display: flex;
+}
+
+/* about us ts logo section*/
+.about-left{
+    width: 30%;
+    background-image: url(../pic/ts-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* about us ts intor section*/
+.about-right{
+     width: 60%;
+}
+.about-right h1{
+    color: whitesmoke;
+    font-family:'Pixel';
+}
+.about-right p{
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+    font-family:'Pixel';
+}
+
+/* benefits of joining us*/
+.join-us{
+    width: 100vw;
+    height: 700px;
+    color: white;
+}
+
+.join-us h1{
+    font-family: 'Pixel';
+    padding-top: 70px;
+    text-align: center;
+}
+.join-us-benefits{
+    width: 100vw;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.join-us-benefits-box{
+    margin-top: 20px;
+    width: 600px;
+    height: 200px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #008080, #84fab0) 1 stretch; 
+    display: flex;
+    
+}
+.box-left1{
+    width: 200px;
+    height: 200px;
+    background-image: url(../pic/adventure.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-left2{
+    width: 200px;
+    height: 200px;
+    background-image: url(../pic/horizon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-left3{
+    width: 200px;
+    height: 200px;
+    background-image: url(../pic/friend.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-left4{
+    width: 200px;
+    height: 200px;
+    background-image: url(../pic/growth.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-right{
+    width: 400px;
+    height: 200px;
+}
+.box-right h2{
+    margin-top: 10px;
+    font-size: 35px;
+    border-bottom: 1px solid white;
+}
+.box-right p{
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+/* ticket section*/
+.ticket{
+    width: 100vw;
+    height: 1100px;
+    color: white;
+}
+.ticket h1{
+    font-family: 'pixel';
+    padding: 10px;
+    text-align: center;
+}
+
+.ticket-event{
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ticket-event-box{
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    border: 3px solid white;
+    border-image: linear-gradient(45deg,#ff5f6d,#ffc371,#ff7e5f,#c56cf0,#6a82fb,#48c6ef)1 stretch;
+    animation: buycolor 3s infinite linear;
+
+}
+
+@keyframes buycolor {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.ticket-event-box-left1{
+    width: 200px;
+    height: 300px;
+    background-image: url(../pic/index.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.ticket-event-box-right{
+    width: 300px;
+    height: 300px;
+}
+
+.ticket-box-right-up{
+    width:300px ;
+    height: 220px;
+    box-sizing: border-box;
+}
+
+.ticket-box-right-up h3{
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+.ticket-box-right-up p{
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.ticket-box-right-down {
+display: flex;
+align-items: center;
+}
+
+.ticket-box-right-down button {
+width: 80px;
+height: 30px;
+font-size: 16px;
+color: white;
+background-color: black;
+border: none;
+cursor: pointer;
+}
+
+.ticket-box-right-down input {
+width: 80px;
+text-align: center;
+margin: 0 10px;
+border: 1px solid #ddd;
+}
+
+.ticket-box-right-down .buy{
+   
+ justify-content: center;
+width: 80px;
+text-align: center;
+margin: 0 10px;
+border: 1px solid transparent;
+animation: buycolor 3s infinite linear;
+border-image: linear-gradient(45deg,#ff5f6d,#ffc371,#ff7e5f,#c56cf0,#6a82fb,#48c6ef)1 stretch;
+margin-left: 90px;
+}
+.book{
+    color: white;
+}
+
+
+.footer{
+    width: 100vw;
+    height: 300px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-sec1{
+    width: 25%;
+}
+.footer-sec2{
+    width: 25%;
+}
+.footer-sec3{
+    width: 25%;
+}
+
